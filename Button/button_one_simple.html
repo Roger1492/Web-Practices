@@ -1,0 +1,139 @@
+<!-- 这个是各种颜色的按钮合集，背景色使用linear-gradient -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: "Arial","sans-serif","Microsoft Yahei","serif";
+		}
+		div{
+			width: 530px;
+			height: 100%;
+			margin: 40px auto;
+		}
+		button{
+			margin: 10px;
+		}
+		a{
+			display:inline-block;
+			margin: 15px 9px;
+			text-decoration:none;
+			text-align:center;
+			line-height:40px;
+		}
+		.btn-default{
+			width: 150px;
+			height: 40px;
+			border:1px solid transparent;
+			color:white;
+			background:lightgray;
+			border-radius:3px;
+			font-size:1.3em;
+		}
+		.btn-green{
+			width: 150px;
+			height: 40px;
+			border:1px solid transparent;
+			border-radius:3px;
+			color:#fff;
+			font-size:1.4em;
+
+			background-image: -webkit-linear-gradient(#009800, #007D00);
+			background-image: -o-linear-gradient(#009800, #007D00);
+			background-image: linear-gradient(#009800, #007D00);
+		}
+		.btn-red{
+			width: 150px;
+			height: 40px;
+			border:1px solid transparent;
+			border-radius:3px;
+			color:#fff;
+			font-size:1.4em;
+		
+			background-image: -webkit-linear-gradient(#F90000, #EC0000);
+			background-image: -o-linear-gradient(#F90000, #EC0000);
+			background-image: linear-gradient(#F90000, #EC0000);
+		}
+		.btn-blue{
+			width: 150px;
+			height: 40px;
+			border:1px solid transparent;
+			border-radius:3px;
+			color:#fff;
+			font-size:1.4em;
+
+			background-image: -webkit-linear-gradient(#0000DD, #3333FF);
+			background-image: -o-linear-gradient(#0000DD, #3333FF);
+			background-image: linear-gradient(#0000DD, #3333FF);
+		}
+		.btn-yellow{
+			width: 150px;
+			height: 40px;
+			border:1px solid transparent;
+			border-radius:3px;
+			color:#fff;
+			font-size:1.4em;
+		
+			background-image: -webkit-linear-gradient(#FFFF11,#DDDD00);
+			background-image: -o-linear-gradient(#FFFF11, #EAEA00);
+			background-image: linear-gradient(#FFFF11, #EAEA00);
+		}
+		.btn-dark{
+			width: 150px;
+			height: 40px;
+			border:1px solid transparent;
+			border-radius:3px;
+			color:#fff;
+			font-size:1.4em;
+		
+			background-image: -webkit-linear-gradient(#292C2E, #43474E,#292C2E);
+			background-image: -o-linear-gradient(#292C2E, #43474E, #292C2E);
+			background-image: linear-gradient(#292C2E, #43474E, #292C2E);
+		}
+		.btn-regulary{
+			width: 250px;
+			height: 50px;
+			line-height:50px;
+			color:#fff;
+			font-size:2em;
+			border-radius:5px;
+		
+			background-image: -webkit-linear-gradient(#81a8cb,#4477a1);
+			background-image: -o-linear-gradient(#81a8cb, #4477a1);
+			background-image: linear-gradient(#81a8cb, #4477a1);
+		}
+		.btn-regulary:hover{
+			background-image: -webkit-linear-gradient(#4488a1, #81a8cb);
+			background-image: -o-linear-gradient(#4488a1, #81a8cb);
+			background-image: linear-gradient(#4488a1, #81a8cb);
+		}
+	</style>
+</head>
+<body>
+	<div>
+	<p>button</p>
+		<button class="btn-default">Button</button>
+		<button class="btn-green">Button</button>
+		<button class="btn-red">Button</button>
+		<button class="btn-blue">Button</button>
+		<button class="btn-yellow">Button</button>
+		<button class="btn-dark">Button</button>
+		<hr>
+		<p>a tag link</p>
+		<a href="" class="btn-default">Button</a>
+		<a href="" class="btn-green">Button</a>
+		<a href="" class="btn-red">Button</a>
+		<a href="" class="btn-blue">Button</a>
+		<a href="" class="btn-yellow">Button</a>
+		<a href="" class="btn-dark">Button</a>
+		<hr>
+		<p>CSS button</p>
+		<a href="" class="btn-regulary">Button</a>
+	</div>
+</body>
+</html>

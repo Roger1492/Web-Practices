@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: "Arial","sans-serif","Microsoft Yahei","serif";
+		}
+		nav{
+			width: 880px;
+			height: 50px;
+			margin: 40px auto;
+		
+			background-image: -webkit-linear-gradient(gray, lightgray,gray);
+			background-image: -o-linear-gradient(gray, lightgray, gray);
+			background-image: linear-gradient(gray, lightgray, gray);
+		}
+		nav ul li{
+			list-style-type: none;
+			float: left;
+			width: 110px;
+			line-height:50px;
+			text-align:center;
+		}
+		nav ul li a{
+			text-decoration:none;
+			color:#1F1F1F;
+			font-size:1.2em;
+			display:block;
+		}
+		nav ul li a:hover{
+			color:white;
+
+			background-image: -webkit-linear-gradient(lightgray, gray, lightgray);
+			background-image: -o-linear-gradient(lightgray, gray, lightgray);
+			background-image: linear-gradient(lightgray, gray, lightgray);
+		}
+		nav ul li ul li{
+			background-image: -webkit-linear-gradient(gray, lightgray, gray);
+			background-image: -o-linear-gradient(gray, lightgray, gray);
+			background-image: linear-gradient(gray, lightgray, gray);
+		}
+		nav ul li ul{
+			display:none;
+		}
+		nav ul li:hover ul{
+			display:block;
+		}
+		nav ul li ul li:hover{
+			width: 130px;
+			position: relative;
+			right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="">HOME</a></li>
+			<li><a href="">Menu -2</a></li>
+			<li><a href="">Menu -3</a></li>
+			<li class="menu"><a href="">Menu -4</a>
+				<ul>
+					<li><a href="">Sub4 -1</a></li>
+					<li><a href="">Sub4 -2</a></li>
+					<li><a href="">Sub4 -3</a></li>
+					<li><a href="">Sub4 -4</a></li>
+					<li><a href="">Sub4 -5</a></li>
+					<li><a href="">Sub4 -6</a></li>
+					<li><a href="">Sub4 -7</a></li>
+				</ul>
+			</li>
+			<li><a href="">Menu -5</a></li>
+			<li><a href="">Menu -6</a></li>
+			<li class="menu"><a href="">Menu -7</a>
+				<ul>
+					<li><a href="">Sub7 - 1</a></li>
+					<li><a href="">Sub7 - 2</a></li>
+					<li><a href="">Sub7 - 3</a></li>
+					<li><a href="">Sub7 - 4</a></li>
+					<li><a href="">Sub7 - 5</a></li>
+					<li><a href="">Sub7 - 6</a></li>
+					<li><a href="">Sub7 - 7</a></li>
+					<li><a href="">Sub7 - 8</a></li>
+					<li><a href="">Sub7 - 9</a></li>
+				</ul>
+			</li>
+			<li><a href="">Menu -8</a></li>
+		</ul>
+	</nav>
+</body>
+</html>

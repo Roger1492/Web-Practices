@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		nav{
+			width: 1050px;
+			margin: 50px auto;
+		}
+		nav ul li{
+			list-style: none;
+			float: left;
+			width: 150px;
+			height: 40px;
+			line-height:40px;
+			background:lightgray;
+			text-align:center;
+		}
+		nav ul li a{
+			text-decoration:none;
+			font-family: "Arial";
+			font-size:1.2em;
+			display:block;
+			color:white;
+		}
+		nav ul li a:hover{
+			background:gray;
+		}
+		nav ul li ul{
+			display:none;
+		}
+	</style>
+	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".menu").mouseenter(function() {
+				$(this).children('ul').slideDown("fast");
+			});
+			$(".menu").mouseleave(function() {
+				$(this).children('ul').slideUp("fast");
+			});
+		});
+	</script>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Home 1</a></li>
+			<li class="menu"><a href="">Home 2</a>
+				<ul>
+					<li><a href="">SubMenu3 - 1</a></li>
+					<li><a href="">SubMenu3 - 2</a></li>
+					<li><a href="">SubMenu3 - 3</a></li>
+					<li><a href="">SubMenu3 - 4</a></li>
+					<li><a href="">SubMenu3 - 5</a></li>
+					<li><a href="">SubMenu3 - 6</a></li>
+				</ul>
+			</li>
+			<li><a href="">Home 4</a></li>
+			<li><a href="">Home 5</a></li>
+			<li class="menu"><a href="">Home 6</a>
+				<ul>
+					<li><a href="">Submenu6 - 1</a></li>
+					<li><a href="">Submenu6 - 2</a></li>
+					<li><a href="">Submenu6 - 3</a></li>
+					<li><a href="">Submenu6 - 4</a></li>
+					<li><a href="">Submenu6 - 5</a></li>
+					<li><a href="">Submenu6 - 6</a></li>
+					<li><a href="">Submenu6 - 7</a></li>
+					<li><a href="">Submenu6 - 8</a></li>
+				</ul>
+			</li>
+			<li><a href="">Home 7</a></li>
+		</ul>
+	</nav>
+</body>
+</html>

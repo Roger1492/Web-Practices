@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: "Arial","sans-serif","Microsoft Yahei","serif";
+		}
+		nav{
+			width: 1000px;
+			margin: 50px auto;
+		}
+		nav ul li{
+			list-style-type: none;
+			float: left;
+			width: 100px;
+			height: 40px;
+			line-height:40px;
+			text-align:center;
+
+			background-image: -webkit-linear-gradient(gray, lightgray, gray);
+			background-image: -o-linear-gradient(gray, lightgray, gray);
+			background-image: linear-gradient(gray, lightgray, gray);
+		}
+		nav ul li a{
+			display:block;
+			text-decoration:none;
+			font-size:1.3em;
+			color:black;
+		}
+		nav ul li a:hover{
+			position: relative;
+			width: 120px;
+			right: 10px;
+			color:white;
+		
+			background-image: -webkit-linear-gradient(lightgray, gray,lightgray);
+			background-image: -o-linear-gradient(lightgray, gray, lightgray);
+			background-image: linear-gradient(lightgray, gray, lightgray);
+		}
+		nav ul .li-menu ul{
+			display:none;
+		}
+		li ul li:nth-child(even){
+			-webkit-transform: skew(25deg);
+			-moz-transform: skew(25deg);
+			-ms-transform: skew(25deg);
+			-o-transform: skew(25deg);
+			transform: skew(25deg);
+		}
+		li ul li:nth-child(odd){
+			-webkit-transform: skew(-25deg);
+			-moz-transform: skew(-25deg);
+			-ms-transform: skew(-25deg);
+			-o-transform: skew(-25deg);
+			transform: skew(-25deg);
+		}
+	</style>
+	<script src="jquery.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".li-menu").mouseenter(function(){
+				$(this).children('ul').slideDown(200);
+			});
+			$(".li-menu").mouseleave(function(){
+				$(this).children('ul').slideUp(200);
+			});
+		});
+	</script>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="">HOME</a></li>
+			<li class="li-menu"><a href="">Home2</a>
+				<ul>
+					<li><a href="">Sub2 -1</a></li>
+					<li><a href="">Sub2 -2</a></li>
+					<li><a href="">Sub2 -3</a></li>
+					<li><a href="">Sub2 -4</a></li>
+					<li><a href="">Sub2 -5</a></li>
+					<li><a href="">Sub2 -6</a></li>
+					<li><a href="">Sub2 -7</a></li>
+				</ul>
+			</li>
+			<li><a href="">Home3</a></li>
+			<li><a href="">Home4</a></li>
+			<li class="li-menu"><a href="">Home5</a>
+				<ul>
+					<li><a href="">Sub4 -1</a></li>
+					<li><a href="">Sub4 -2</a></li>
+					<li><a href="">Sub4 -3</a></li>
+					<li><a href="">Sub4 -4</a></li>
+					<li><a href="">Sub4 -5</a></li>
+					<li><a href="">Sub4 -6</a></li>
+					<li><a href="">Sub4 -7</a></li>
+				</ul>
+			</li>
+			<li><a href="">Home6</a></li>
+			<li><a href="">Home7</a></li>
+			<li><a href="">Home8</a></li>
+			<li class="li-menu"><a href="">Home9</a>
+				<ul>
+					<li><a href="">Sub9 -1</a></li>
+					<li><a href="">Sub9 -2</a></li>
+					<li><a href="">Sub9 -3</a></li>
+					<li><a href="">Sub9 -4</a></li>
+					<li><a href="">Sub9 -5</a></li>
+					<li><a href="">Sub9 -6</a></li>
+					<li><a href="">Sub9 -7</a></li>
+				</ul>
+			</li>
+			<li><a href="">Home10</a></li>
+		</ul>
+	</nav>
+</body>
+</html>
