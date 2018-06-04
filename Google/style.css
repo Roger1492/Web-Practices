@@ -1,0 +1,37 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100vw;
+    height: 50px;
+}
+.head{
+    float: right;
+    width: 300px;
+    height: 50px;
+}
+.head > div{
+    position: relative;
+    display: inline-block;
+    line-height: 50px;
+    width: 60px;
+    text-align: center;
+}
+.head > div > a{
+    text-decoration: none;
+}
+.head > div > a:nth-of-type(1):hover,
+.head > div > a:nth-of-type(2):hover{
+    text-decoration: underline;
+}
+.signin{
+    display: inline-block;
+    border-radius: 3px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+}
