@@ -1,0 +1,65 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 30px;
+    background-color: #e3e4e5;
+}
+
+.wrap{
+    margin: 0 auto;
+    width: 1190px;
+    height: 30px;
+    background: lightblue;
+}
+
+.wrap > div{
+    width: 77px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #999;
+    float: left;
+    cursor: pointer;
+}
+
+.wrap > div:first-child{
+    margin-left: 300px;
+    margin-right: 100px;
+}
+
+.wrap > div table{
+    display: none;
+}
+
+/* hover显示table */
+.wrap > div:hover table{
+    display: block;
+}
+
+.location-table{
+    width: 322px;
+    height: 333px;
+    font-size: 12px;
+    /* border: 1px solid gray; */
+    box-shadow: 1px 1px 1px 1px gray, -1px 0px 1px 1px gray;
+}
+.location-table tr{
+    height: 30px;
+}
+.location-table td{
+    width: 60px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    padding: 0;
+}
+.location-table td:hover{
+    background: #e3e4e5;
+    color: red;
+}

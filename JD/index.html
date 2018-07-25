@@ -1,12 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>京东(JD.COM)-正品低价、品质保障、配送及时、轻松购物!</title>
 </head>
+
 <body>
-    
+    <!-- 活动时才显示特定内容(一般是banner广告) -->
+    <div id="newBanner"></div>
+
+    <!-- 导航条 -->
+    <header>
+        <div class="wrap">
+            <!-- 当前位置 -->
+            <div class="location">
+                <div class="location-show">
+                    <i style="color:red;" class="fa fa-map-marker"></i>
+                    <span class="location-now">上海</span>
+                </div>
+                <table class="location-table">
+                    <tr>
+                        <td>北京</td>
+                        <td>上海</td>
+                        <td>天津</td>
+                        <td>重庆</td>
+                        <td>河北</td>
+                    </tr>
+                    <tr>
+                        <td>山西</td>
+                        <td>河南</td>
+                        <td>辽宁</td>
+                        <td>吉林</td>
+                        <td>黑龙江</td>
+                    </tr>
+                    <tr>
+                        <td>内蒙古</td>
+                        <td>江苏</td>
+                        <td>山东</td>
+                        <td>安徽</td>
+                        <td>浙江</td>
+                    </tr>
+                    <tr>
+                        <td>福建</td>
+                        <td>湖北</td>
+                        <td>湖南</td>
+                        <td>广东</td>
+                        <td>广西</td>
+                    </tr>
+                    <tr>
+                        <td>江西</td>
+                        <td>四川</td>
+                        <td>海南</td>
+                        <td>贵州</td>
+                        <td>云南</td>
+                    </tr>
+                    <tr>
+                        <td>西藏</td>
+                        <td>陕西</td>
+                        <td>甘肃</td>
+                        <td>青海</td>
+                        <td>宁夏</td>
+                    </tr>
+                    <tr>
+                        <td>新疆</td>
+                        <td>港澳</td>
+                        <td>台湾</td>
+                        <td>钓鱼岛</td>
+                        <td>海外</td>
+                    </tr>
+                    <!-- TODO: 海外站 -->
+                    <!-- <tr>
+                        <td>Availables Sites</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-global"></i>Global Sites</td>
+                        <td><i class="fa fa-russra"></i>Сайт России</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-indonesia"></i>Situs Indonesia</td>
+                        <td><i class="fa fa-spanish"></i>Sitio de España</td>
+                    </tr> -->
+                </table>
+            </div>
+
+            <!-- 菜单 -->
+            <div class="login">
+                <a href="javascript:void(0);">请登录</a>
+            </div>
+            <div class="singin">
+                <span>免费注册</span>
+            </div>
+            <div>我的订单</div>
+            <div>我的京东∨
+                <table>
+                    <tr>
+                        <td>待处理订单</td>
+                        <td>消息</td>
+                    </tr>
+                    <tr>
+                        <td>返修退换货</td>
+                        <td>我的回答</td>
+                    </tr>
+                    <tr>
+                        <td>降价商品</td>
+                        <td>我的关注</td>
+                    </tr>
+                    <tr>
+                        <td>我的京豆</td>
+                        <td>我的优惠券</td>
+                    </tr>
+                    <tr>
+                        <td>我的白条</td>
+                        <td>我的理财</td>
+                    </tr>
+                </table>
+            </div>
+            <div>京东会员</div>
+            <div>企业采购∨
+                <table>
+                    <tr>
+                        <td>企业购</td>
+                        <td>商用场景馆</td>
+                    </tr>
+                    <tr>
+                        <td>工业品</td>
+                        <td>礼品卡</td>
+                    </tr>
+                </table>
+            </div>
+            <div>客户服务∨
+                <table>
+                    <tr>
+                        <th>客户</th>
+                    </tr>
+                    <tr>
+                        <td>帮助中心</td>
+                        <td>售后服务</td>
+                    </tr>
+                    <tr>
+                        <td>在线客服</td>
+                        <td>意见建议</td>
+                    </tr>
+                    <tr>
+                        <td>电话客服</td>
+                        <td>客服邮箱</td>
+                    </tr>
+                    <tr>
+                        <td>金融咨询</td>
+                        <td>全球售客服</td>
+                    </tr>
+                    <tr>
+                        <th>商户</th>
+                    </tr>
+                    <tr>
+                        <td>合作招商</td>
+                        <td>学习中心</td>
+                    </tr>
+                    <tr>
+                        <td>商家后台</td>
+                        <td>京麦工作台</td>
+                    </tr>
+                    <tr>
+                        <td>商家帮助</td>
+                        <td>规则平台</td>
+                    </tr>
+                </table>
+            </div>
+            <div>网站导航∨
+                <table>
+                    <tr>
+                        <th>特色主题</th>
+                        <th>行业频道</th>
+                        <th>生活服务</th>
+                        <th>更多精选</th>
+                    </tr>
+                    <tr>
+                        <td>京东试用</td>
+                        <td>京东金融</td>
+                        <td>全球售</td>
+                        <td>国际站</td>
+                        <td>手机</td>
+                        <td>智能数码</td>
+                        <td>玩3C</td>
+                        <td>京东众筹</td>
+                        <td>白条</td>
+                        <td>京东金融App</td>
+                        <td>合作招商</td>
+                        <td>京东通信</td>
+                        <td>京东E卡</td>
+                    </tr>
+                    <tr>
+                        <td>京东会员</td>
+                        <td>京东预售</td>
+                        <td>买什么</td>
+                        <td>俄语站</td>
+                        <td>电脑办公</td>
+                        <td>家用电器</td>
+                        <td>京东智能</td>
+                        <td>京东小金库</td>
+                        <td>理财</td>
+                        <td>智能家电</td>
+                        <td>企业采购</td>
+                        <td>服务市场</td>
+                        <td>办公生活馆</td>
+                    </tr>
+                    <tr>
+                        <td>装机大师</td>
+                        <td>0元测评</td>
+                        <td>定期买</td>
+                        <td>港澳售</td>
+                        <td>服装城</td>
+                        <td>京东生鲜</td>
+                        <td>加装城</td>
+                        <td>话费</td>
+                        <td>水电煤</td>
+                        <td>彩票</td>
+                        <td>乡村招募</td>
+                        <td>校园加盟</td>
+                        <td>京友邦</td>
+                    </tr>
+                    <tr>
+                        <td>优惠券</td>
+                        <td>秒杀</td>
+                        <td>闪购</td>
+                        <td>印尼站</td>
+                        <td>母婴</td>
+                        <td>食品</td>
+                        <td>农资频道</td>
+                        <td>旅行</td>
+                        <td>机票酒店</td>
+                        <td>电影票</td>
+                        <td>京东社区</td>
+                        <td>游戏社区</td>
+                        <td>知识产权维权</td>
+                    </tr>
+                    <tr>
+                        <td>京东金融科技</td>
+                        <td>In货推荐</td>
+                        <td>陪伴计划</td>
+                        <td>出海招商</td>
+                        <td>整车</td>
+                        <td>图书</td>
+                        <td>京东元器件</td>
+                        <td>京东到家</td>
+                        <td>游戏</td>
+                    </tr>
+                </table>
+            </div>
+            <div>手机京东</div>
+        </div>
+    </header>
+
+    <div></div>
+
+    <footer></footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
