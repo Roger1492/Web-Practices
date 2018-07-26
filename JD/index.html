@@ -20,7 +20,7 @@
             <!-- 当前位置 -->
             <div class="location">
                 <div class="location-show">
-                    <i style="color:red;" class="fa fa-map-marker"></i>
+                    <i class="fa fa-map-marker"></i>
                     <span class="location-now">上海</span>
                 </div>
                 <table class="location-table">
@@ -90,13 +90,17 @@
 
             <!-- 菜单 -->
             <div class="login">
-                <a href="javascript:void(0);">请登录</a>
+                <a class="hover-red" href="javascript:void(0);">请登录</a>
             </div>
             <div class="singin">
-                <span>免费注册</span>
+                <span  class="hover-red">免费注册</span>
             </div>
-            <div>我的订单</div>
-            <div class="my-jd">我的京东∨
+            <div>
+                <span class="hover-red">我的订单</span>
+            </div>
+            <hr class="nav-split-line">
+            <div class="my-jd">
+                <span class="hover-red">我的京东∨</span>
                 <table class="my-jd-table">
                     <tr>
                         <td>待处理订单</td>
@@ -120,8 +124,13 @@
                     </tr>
                 </table>
             </div>
-            <div>京东会员</div>
-            <div class="enterprise-purchase">企业采购∨
+            <hr class="nav-split-line">
+            <div>
+                <span class="hover-red">京东会员</span>
+            </div>
+            <hr class="nav-split-line">
+            <div class="enterprise-purchase">
+                <span class="hover-red">企业采购∨</span>
                 <table class="enterprise-purchase-table">
                     <tr>
                         <td>企业购</td>
@@ -133,7 +142,9 @@
                     </tr>
                 </table>
             </div>
-            <div class="client-service">客户服务∨
+            <hr class="nav-split-line">
+            <div class="client-service">
+                <span class="hover-red">客户服务∨</span>
                 <table class="client-service-table">
                     <tr>
                         <th>客户</th>
@@ -171,13 +182,15 @@
                     </tr>
                 </table>
             </div>
-            <div class="site-nav">网站导航∨
+            <hr class="nav-split-line">
+            <div class="site-nav">
+                <span class="hover-red">网站导航∨</span>
                 <table class="site-nav-table">
                     <tr>
-                        <th>特色主题</th>
-                        <th>行业频道</th>
-                        <th>生活服务</th>
-                        <th>更多精选</th>
+                        <th colspan="4">特色主题</th>
+                        <th colspan="3">行业频道</th>
+                        <th colspan="3">生活服务</th>
+                        <th colspan="3">更多精选</th>
                     </tr>
                     <tr>
                         <td>京东试用</td>
@@ -252,11 +265,88 @@
                     </tr>
                 </table>
             </div>
-            <div>手机京东</div>
+            <hr class="nav-split-line">
+            <div class="mobile-jd">
+                <span class="hover-red">手机京东</span>
+                <img class="mobile-jd-now" src="imgs/header/mobile_qrcode_1.png" alt="二维码">
+                <div class="mobile-jd-pop">
+                    <section>
+                        <img src="imgs/header/mobile_qrcode_1.png" alt="">
+                        <a href="javascript:void(0);">手机京东</a><br>
+                        <span>新人专享大礼包</span>
+                        <span class="mobile-jd-download">
+                            <a href="javascript:void(0);"></a>
+                            <a href="javascript:void(0);"></a>
+                            <a href="javascript:void(0);"></a>
+                        </span>
+                    </section>
+                    <section>
+                        <img src="imgs/header/mobile_qrcode_2.jpg" alt="">
+                        <a href="javascript:void(0);">关注京东微信</a><br>
+                        <span>微信扫一扫关注新粉最高180元惊喜礼包</span>
+                    </section>
+                    <section>
+                        <img src="imgs/header/mobile_qrcode_3.jpg" alt="">
+                        <a href="javascript:void(0);">京东金融客户端</a><br>
+                        <span>新人专享大礼包</span>
+                        <span class="mobile-jd-download">
+                            <a href="javascript:void(0);"></a>
+                            <a href="javascript:void(0);"></a>
+                        </span>
+                    </section>
+                </div>
+            </div>
         </div>
     </header>
 
-    <div></div>
+    <div id="container">
+        <div class="head">
+            <div class="c-l logo">
+                <a href="javascript:void(0);"></a>
+            </div>
+            <div class="c-r search">
+                <div class="search-box">
+                    <input type="search" name="search" id="search">
+                    <span></span>
+                    <button><i class="fa fa-lg fa-search"></i></button>
+                </div>
+                <div class="search-suggestion">
+                    <span class="search-suggestion-now"><a href="javascript:void(0);" style="color: red;">超级品牌日</a></span>
+                    <a href="javascript:void(0);">游戏本</a>
+                    <a href="javascript:void(0);">Mac新品</a>
+                    <a href="javascript:void(0);">猫粮狗粮</a>
+                    <a href="javascript:void(0);">旗舰电竞</a>
+                    <a href="javascript:void(0);">亲子出游</a>
+                    <a href="javascript:void(0);">399减100</a>
+                    <a href="javascript:void(0);">潮流新品</a>
+                    <a href="javascript:void(0);">大屏电视</a>
+                </div>
+                <div class="search-cart">
+                    <i class="fa fa-cart-plus"></i>
+                    <span class="my-cart">我的购物车</span>
+                    <span class="cart-num">0</span>
+                    <div class="shopping-cart-more">
+                        <span>购物车中还没有商品，赶紧选购吧！</span>
+                    </div>
+                </div>
+                <div class="search-navitems">
+                    <a href="javascript:void(0);">秒杀</a>
+                    <a href="javascript:void(0);">优惠券</a>
+                    <a href="javascript:void(0);">PLUS会员</a>
+                    <a href="javascript:void(0);">闪购</a>
+                    <a href="javascript:void(0);">拍卖</a>
+                    <a href="javascript:void(0);">京东服饰</a>
+                    <a href="javascript:void(0);">京东超市</a>
+                    <a href="javascript:void(0);">生鲜</a>
+                    <a href="javascript:void(0);">全球购</a>
+                    <a href="javascript:void(0);">京东金融</a>
+                </div>
+                <div class="search-ads">
+                    <a href="javascripr:void(0);"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer></footer>
 
