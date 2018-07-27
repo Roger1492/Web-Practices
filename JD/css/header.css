@@ -573,8 +573,52 @@ header td:hover{
     background: #989b9e;
     width: 1000px;
     height: 480px;
+    display: none;
 }
 
 .scp1{
+    /* max-height: 50px; */
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.scp1 a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+}
+.scp1 a:hover{
+    color: red;
+}
+
+.scp-comm a{
     position: relative;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    background: rgb(99, 98, 98);
+    margin-top: 10px;
+    margin-left: 20px;
+    color: wheat;
+}
+
+.scp1 > span{
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+
+.scp-more{
+    position: relative;
+    left: 130px;
+    top: -20px;
+    width: 680px;
+}
+.scp-more a{
+    display: inline-block;
+    margin: 0 3px;
+}
+.cate-menu li:hover > .sub-cate-pop{
+    display: block;
 }
