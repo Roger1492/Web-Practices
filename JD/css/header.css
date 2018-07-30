@@ -16,6 +16,31 @@ header td:hover{
     color: red;
 }
 
+#newBanner{
+    width: 100%;
+    height: 80px;
+    /* background: #3294b8; */
+    /* background: #028f6c; */
+}
+#newBanner a{
+    display: block;
+    width: 1109px;
+    height: 80px;
+    margin: 0 auto;
+}
+#newBanner span{
+    position: relative;
+    display: inline-block;
+    top: -80px;
+    left: 1390px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background: rgba(198, 201, 202, 0.39);
+    cursor: pointer;
+}
+
 
 
 /* *********** */
@@ -187,7 +212,7 @@ header td:hover{
     border-width: 1px;
     border-style: solid;
     border-color: transparent #b6b7b8 #b6b7b8 #b6b7b8;
-    z-index: 9;
+    z-index: 99;
 }
 .site-nav-table tr{
     width: 1190px;
@@ -495,7 +520,7 @@ header td:hover{
     left: -250px;
     width: 250px;
     height: 470px;
-    z-index: 1;
+    z-index: 9;
 }
 .sl-c{
     position: relative;
@@ -535,7 +560,6 @@ header td:hover{
     top: -450px;
     width: 1190px;
     height: 480px;
-    background: rgb(207, 210, 211);
 }
 
 .cate-menu{
@@ -545,7 +569,10 @@ header td:hover{
     width: 190px;
     height: 480px;
     background: white;
+    list-style-type: none;
+    z-index: 1;
 }
+
 .sub-cate{
     position: relative;
     text-indent: 10px;
@@ -556,7 +583,7 @@ header td:hover{
     cursor: pointer;
 }
 .sub-cate:hover{
-    background: rgb(146, 144, 144);
+    background: rgb(199, 198, 198);
 }
 .sub-cate a{
     text-decoration: none;
@@ -577,7 +604,6 @@ header td:hover{
 }
 
 .scp1{
-    /* max-height: 50px; */
     padding: 0;
     margin: 0;
     float: left;
@@ -621,4 +647,128 @@ header td:hover{
 }
 .cate-menu li:hover > .sub-cate-pop{
     display: block;
+}
+
+.cate-part-col1{
+    position: absolute;
+    left: 800px;
+    width: 198px;
+    height: 424px;
+}
+.cate-brand{
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+.cate-promotion{
+    position: relative;
+    left: 15px;
+    top: 15px;
+}
+.cate-brand a{
+    position: relative;
+    display: inline-block;
+    width: 83px;
+    height: 35px;
+}
+.cate-brand a img{
+    width: 83px;
+    height: 35px;
+}
+.cate-promotion a{
+    display: inline-block;
+    width: 168px;
+    height: 134px;
+}
+.cate-promotion a img{
+    width: 168px;
+    height: 134px;
+}
+
+
+/* 轮播图 */
+.slider-middle{
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    width: 590px;
+    height: 470px;
+    background: lightblue;
+}
+.sm-img-all{
+    position: relative;
+}
+.sm-img-all img{
+    position: absolute;
+}
+.sm-img-all img:not(:first-child){
+    display: none;
+}
+.sm-img-lr{
+    position: relative;
+}
+.sm-img-lr span{
+    position: relative;
+    top: 200px;
+    display: inline-block;
+    width: 25px;
+    height: 40px;
+    background: rgba(201, 199, 199, 0.5);
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s;
+}
+.sm-img-lr span:nth-of-type(2){
+    left: 536px;
+}
+.sm-img-lr span:hover{
+    background: rgba(156, 154, 154, 0.5);
+    color: white;
+}
+.sm-img-dots{
+    position: relative;
+    top: 360px;
+    left: 30px;
+}
+.sm-img-dots span{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all .2s;
+}
+.sm-img-dots span:hover,
+.dots-on{
+    background: white;
+    box-shadow: 0px 0px 0px 4px rgba(245, 245, 245, 0.37);
+}
+
+.te{
+    position: absolute;
+    left: 800px;
+    top: 8px;
+    width: 190px;
+    height: 470px;
+}
+.te a{
+    display: inline-block;
+    margin: 3px 0;
+}
+.te a img{
+    transition: all .2s;
+}
+.te a:hover img{
+    opacity: .8;
+}
+
+.slider-right{
+    position: absolute;
+    left: 1000px;
+    top: 0px;
+    width: 190px;
+    height: 480px;
+    background: lightblue;
 }
