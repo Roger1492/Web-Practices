@@ -10,6 +10,10 @@ let imgNewBanner = document.getElementById("newBanner").querySelector("img");
 let sliderLeftImgs = document.getElementsByClassName("slider-left")[0].querySelectorAll("img");
 let searchAd = document.getElementsByClassName("search-ads")[0].querySelector("img");
 
+let snFirsts = document.getElementsByClassName("sn-first")[0].querySelectorAll("span");
+let snShows = document.getElementsByClassName("sn-show");
+let srUnderline = document.getElementsByClassName("sr-underline")[0];
+
 let index = 0;
 let sliderIndex = 0;
 
@@ -92,3 +96,19 @@ window.onload = function(){
 closeNewBanner.addEventListener("click", function(e){
     this.parentElement.parentElement.removeChild(this.parentElement);
 }, false);
+
+// 切换 促销和公告
+snFirsts.forEach((ele,ind,arr) => {
+    ele.addEventListener("mouseenter", function(e){
+
+        for(let i = 0; i < snShows.length; i++){
+            snShows[i].style.display = "none";
+        }
+        srUnderline.style.transform = "translate("+ind*55+"px)";
+        // console.log(ind);
+
+
+        let s = document.querySelector(`div[data-con1="${e.target.classList.value}"]`);
+        s.style.display = "block";
+    }, false);
+})

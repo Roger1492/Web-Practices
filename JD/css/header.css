@@ -572,12 +572,15 @@ header td:hover{
     display: inline-block;
     width: 190px;
     height: 40px;
-    background-image: url("../imgs/header/search-ads.png");
+    /* background-image: url("../imgs/header/search-ads.png"); */
 }
 
 /* ******* */
 /* 产品目录 */
 /* ******* */
+.fs{
+    height: 540px;
+}
 .slider-left{
     position: relative;
     left: -250px;
@@ -833,7 +836,7 @@ header td:hover{
     top: 0px;
     width: 190px;
     height: 480px;
-    background: lightblue;
+    background: white;
 }
 
 
@@ -906,44 +909,123 @@ header td:hover{
     position: relative;
     width: 190px;
     height: 130px;
-    background: #666;
-}
-.sn-first,
-.sn-second{
-    position: absolute;
-}
-.snf-down,
-.sns-down{
-    display: none;
-}
-.snf-down a,
-.sns-down a{
-    display: block;
-    text-decoration: none;
-    font-size: 14px;
-    color: black;
 }
 .sn-first span{
     position: relative;
+    margin: 3px 10px;
     display: inline-block;
-    left: 10px;
+    cursor: pointer;
 }
-.sn-second span{
+.sn-first a{
     position: relative;
+    left: 30px;
+    color: black;
     display: inline-block;
-    left: 60px;
+    text-decoration: none;
+    transition: all .2s;
+    font-size: 14px;
 }
-.sn-first:hover .snf-down,
-.sn-second:hover .sns-down{
+.sn-first a:hover{
+    color: red;
+}
+.sn-second{
+    position: relative;
+}
+.sn-show{
+    position: relative;
+    margin-left: 5px;
+}
+.sn-show:nth-of-type(2){
+    display: none;
+}
+.sn-show a{
+    font-size: 14px;
+    text-decoration: none;
+    color: gray;
     display: block;
+    transition: all .2s;
 }
-.sr-news > a{
+.sn-show a:hover{
+    color: red;
+}
+.sr-underline{
     position: relative;
-    left: 150px;
+    top: -10px;
+    left: 5px;
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 2px;
+    background: red;
+    transition: all .2s;
 }
-
 
 .sr-service{
+    position: relative;
+    margin-top: 11px;
+    padding-left: 1px;
     width: 190px;
     height: 190px;
+    overflow: hidden;
+}
+.sr-service div > section{
+    position: relative;
+    float: left;
+    margin: 1px;
+    width: 45px;
+    height: 61px;
+    background: lightblue;
+    transition: all .2s;
+}
+.sr-service div > section a{
+    position: relative;
+    top: 10px;
+    color: #bea68d;
+    transition: all .2s;
+}
+.sr-service div > section:hover a{
+    color: red;
+}
+.sr-service section i{
+    position: relative;
+    left: 16px;
+    text-align: center;
+}
+.sr-service section span{
+    position: relative;
+
+    left: 6px;
+    display: inline-block;
+    font-size: 12px;
+}
+.service-first:hover section{
+    transform: translateY(-30px)
+}
+.sf-show{
+    position: absolute;
+    top: 220px;
+    width: 190px;
+    height: 160px;
+    background: black;
+    z-index: 1;
+}
+.service-first section:hover + .sf-show{
+    top: 30px;
+}
+
+.floors-1{
+    position: relative;
+    width: 1190px;
+    height: 275px;
+    background: lightblue;
+}
+.seckill{
+    position: relative;
+    display: inline-block;
+    width: 190px;
+    height: 275px;
+    background: lightcoral;
+}
+.seckill > span{
+    display: block;
 }
