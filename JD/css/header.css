@@ -6,7 +6,12 @@ html,body{
     font-family: "Microsoft Yahei";
     background: rgb(230, 231, 231);
 }
+
+
+/* header相关 */
+
 header{
+    position: relative;
     width: 100%;
     height: 30px;
     background-color: #e3e4e5;
@@ -19,8 +24,6 @@ header td:hover{
 #newBanner{
     width: 100%;
     height: 80px;
-    /* background: #3294b8; */
-    /* background: #028f6c; */
 }
 #newBanner a{
     display: block;
@@ -39,6 +42,67 @@ header td:hover{
     text-align: center;
     background: rgba(198, 201, 202, 0.39);
     cursor: pointer;
+}
+
+/* 右侧导航 */
+.sb-wrap{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100vh;
+}
+.sidebar-s{
+    position: relative;
+    left: 145px;
+    width: 5px;
+    height: 100vh;
+    background: #7a6e6e;
+    z-index: -1;
+}
+.sidebar{
+    position: absolute;
+    top: 200px;
+    width: 110px;
+}
+.sidebar a{
+    position: relative;
+    margin-top: 5px;
+    width: 110px;
+    left: 35px;
+    height: 26px;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    color: white;
+}
+.sidebar a span:nth-of-type(1){
+    position: relative;
+    left: 90px;
+    z-index: -1;
+    display: inline-block;
+    height: 26px;
+    width: 80px;
+    background: #7a6e6e;
+    text-align: center;
+    transition: all .2s;
+    border-radius: 3px 0 0 3px;
+}
+.sidebar a span:nth-of-type(2){
+    position: relative;
+    display: inline-block;
+    left: 5px;
+    width: 21px;
+    height: 26px;
+    text-align: center;
+    background: #7a6e6e;
+    border-radius: 3px 0 0 3px;
+}
+.sidebar a:hover span{
+    background: red;
+}
+.sidebar a:hover span:nth-of-type(1){
+    left: 12px;
 }
 
 
@@ -350,7 +414,6 @@ header td:hover{
     top: -30px;
     width: 190px;
     height: 170px;
-    /* box-shadow: 0 0 1px 0 gray; */
 }
 .c-l{
     float: left;
@@ -771,4 +834,116 @@ header td:hover{
     width: 190px;
     height: 480px;
     background: lightblue;
+}
+
+
+/* 右边相关内容 */
+.sr-user{
+    position: relative;
+    width: 190px;
+    height: 150px;
+    text-align: center;
+}
+.sr-logo{
+    position: relative;
+    margin: 0 auto;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgb(214, 213, 213);
+}
+.sr-logo img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.sr-username{
+    position: relative;
+    margin: 4px 0;
+    font-size: 14px;
+}
+.sr-username a{
+    text-decoration: none;
+    color: gray;
+    transition: all .2s;
+}
+.sr-login a{
+    text-decoration: none;
+    font-size: 14px;
+    color: grey;
+    transition: all .2s;
+}
+.sr-username a:hover,
+.sr-login a:hover{
+    color: red;
+}
+.sr-other a{
+    width: 70px;
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+    padding: 2px;
+    border-radius: 10px;
+    transition: all .2s;
+    box-shadow: 0 2px 2px 0px rgb(233, 230, 230);
+}
+.sr-other a:nth-of-type(1){
+    background: white;
+    color: red;
+}
+.sr-other a:nth-of-type(2){
+    background: black;
+    color: rgb(160, 160, 42);
+}
+.sr-other a:hover{
+    color: white;
+    background: red;
+}
+.sr-news{
+    position: relative;
+    width: 190px;
+    height: 130px;
+    background: #666;
+}
+.sn-first,
+.sn-second{
+    position: absolute;
+}
+.snf-down,
+.sns-down{
+    display: none;
+}
+.snf-down a,
+.sns-down a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+.sn-first span{
+    position: relative;
+    display: inline-block;
+    left: 10px;
+}
+.sn-second span{
+    position: relative;
+    display: inline-block;
+    left: 60px;
+}
+.sn-first:hover .snf-down,
+.sn-second:hover .sns-down{
+    display: block;
+}
+.sr-news > a{
+    position: relative;
+    left: 150px;
+}
+
+
+.sr-service{
+    width: 190px;
+    height: 190px;
 }

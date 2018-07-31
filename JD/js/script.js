@@ -1,10 +1,15 @@
 let locationNow = document.getElementsByClassName("location-now")[0];
-let locations = Array.from(document.getElementsByClassName("location-table")[0].querySelectorAll("td"));
+let locations = document.getElementsByClassName("location-table")[0].querySelectorAll("td");
 let superName = document.getElementsByClassName("search-suggestion-now")[0].getElementsByTagName("a")[0];
 let superNameArr = ["超级品牌日","夏日新推荐","平衡轮首发","京东水饮节",];
+
 let newBanner = document.getElementById("newBanner");
 let closeNewBanner = document.getElementById("newBanner").getElementsByTagName("span")[0];
 let imgNewBanner = document.getElementById("newBanner").querySelector("img");
+
+let sliderLeftImgs = document.getElementsByClassName("slider-left")[0].querySelectorAll("img");
+let searchAd = document.getElementsByClassName("search-ads")[0].querySelector("img");
+
 let index = 0;
 let sliderIndex = 0;
 
@@ -65,11 +70,18 @@ setInterval(function(){
 window.onload = function(){
     let r = Math.floor(Math.random()*2);
 
-    // 如果是第一张图片，则背景换成#3294b8，否则换成#028f6c
+    // 1, 如果是第一张图片，则背景换成#3294b8，否则换成#028f6c
+    // 2，如果是第一个，则加载第一组图片，否则加载第二组
     if(r == 0){
         newBanner.style.background = "#3294b8";
+        sliderLeftImgs[0].src = "imgs/header-slider/a1.png";
+        sliderLeftImgs[1].src = "imgs/header-slider/a2.jpg";
+        searchAd.src = "imgs/header-slider/a3.png"
     } else {
         newBanner.style.background = "#028f6c";
+        sliderLeftImgs[0].src = "imgs/header-slider/b1.png";
+        sliderLeftImgs[1].src = "imgs/header-slider/b2.jpg";
+        searchAd.src = "imgs/header-slider/b3.png"
     }
 
     imgNewBanner.src = "imgs/top-banner/"+r+".jpg";
