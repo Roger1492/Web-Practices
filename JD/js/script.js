@@ -14,8 +14,11 @@ let snFirsts = document.getElementsByClassName("sn-first")[0].querySelectorAll("
 let snShows = document.getElementsByClassName("sn-show");
 let srUnderline = document.getElementsByClassName("sr-underline")[0];
 
+let secKillSecond = document.getElementById("seckill-second");
+
 let index = 0;
 let sliderIndex = 0;
+let seckillIndex = 60;
 
 // 轮播图DOM
 let smImgAll = document.getElementsByClassName("sm-img-all")[0];
@@ -26,6 +29,10 @@ let sliderNext = document.getElementsByClassName("next")[0];
 
 // ↑ 以上是获取的元素DOM
 ///////////////////////
+
+function addZero(n){
+    return n < 10 ? '0' + n : '' + n;
+}
 
 
 // 改变定位位置
@@ -112,3 +119,13 @@ snFirsts.forEach((ele,ind,arr) => {
         s.style.display = "block";
     }, false);
 })
+
+// 秒杀
+setInterval(function(){
+    seckillIndex--;
+    if(seckillIndex <= 0 || seckillIndex >= 60){
+        seckillIndex = 60;
+    } else {
+        secKillSecond.innerHTML = addZero(seckillIndex);
+    }
+}, 1000);
