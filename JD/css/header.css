@@ -603,19 +603,25 @@ header td:hover{
 }
 .sl-c1 img{
     position: relative;
+    top: 25px;
     width: 790px;
     height: 470px;
 }
 .sl-close{
-    position: relative;
+    position: absolute;
     display: inline-block;
     width: 20px;
     height: 20px;
     top: 30px;
-    left: 560px;
+    left: 760px;
     color: white;
     font-size: 20px;
     cursor: pointer;
+    z-index: 1;
+    cursor: pointer;
+}
+.sl-close:hover{
+    color: #989b9e;
 }
 .slider-left:hover .sl-c1{
     transform: scaleX(1);
@@ -1003,14 +1009,15 @@ header td:hover{
 }
 .sf-show{
     position: absolute;
-    top: 220px;
+    top: 190px;
     width: 190px;
     height: 160px;
     background: black;
     z-index: 1;
+    transition: all .2s;
 }
-.service-first section:hover + .sf-show{
-    top: 30px;
+.service-first:hover .sf-show{
+    transform: translateY(-162px);
 }
 
 .floors-1{
@@ -1065,4 +1072,57 @@ header td:hover{
     text-align: center;
     font-weight: 800;
     font-size: 20px;
+}
+
+.slider-list1{
+    position: relative;
+    top: -275px;
+    left: 190px;
+    width: 800px;
+    height: 275px;
+    overflow: hidden;
+}
+.slider-list1 > div{
+    position: relative;
+    width: 4000px;
+    height: 275px;
+    transition: all .3s ease-in-out;
+}
+.slider-list1 > div > section{
+    position: relative;
+    width: 800px;
+    height: 275px;
+    float: left;
+}
+.slider-list1 > div > section:nth-of-type(1){
+    background: rgb(24, 86, 107);
+}
+.slider-list1 > div > section:nth-of-type(2){
+    background: lightcoral;
+}
+.slider-list1 > div > section:nth-of-type(3){
+    background: lightseagreen;
+}
+.slider-list1 > div > section:nth-of-type(4){
+    background: lightslategray;
+}
+.slider-list1 > div > section:nth-of-type(5){
+    background: lightgoldenrodyellow;
+}
+.slider-list1 span{
+    position: relative;
+    top: -150px;
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: rgba(131, 135, 136, 0.562);
+    cursor: pointer;
+}
+.slider-list1 span:hover{
+    background: #989b9e;
+}
+.slider-list1 span:nth-of-type(2){
+    transform: translateX(756px);
 }

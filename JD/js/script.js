@@ -7,8 +7,11 @@ let newBanner = document.getElementById("newBanner");
 let closeNewBanner = document.getElementById("newBanner").getElementsByTagName("span")[0];
 let imgNewBanner = document.getElementById("newBanner").querySelector("img");
 
+let sliderLeft = document.getElementsByClassName("slider-left")[0];
 let sliderLeftImgs = document.getElementsByClassName("slider-left")[0].querySelectorAll("img");
 let searchAd = document.getElementsByClassName("search-ads")[0].querySelector("img");
+
+let slClose = document.getElementsByClassName("sl-close")[0];
 
 let snFirsts = document.getElementsByClassName("sn-first")[0].querySelectorAll("span");
 let snShows = document.getElementsByClassName("sn-show");
@@ -16,9 +19,14 @@ let srUnderline = document.getElementsByClassName("sr-underline")[0];
 
 let secKillSecond = document.getElementById("seckill-second");
 
+let sliderList1 = document.getElementsByClassName("slider-list1")[0].getElementsByTagName("div")[0];
+let sl1p = document.getElementsByClassName("sl1-p")[0];
+let sl1n = document.getElementsByClassName("sl1-n")[0];
+
 let index = 0;
 let sliderIndex = 0;
 let seckillIndex = 60;
+let sl1Index = 0;
 
 // 轮播图DOM
 let smImgAll = document.getElementsByClassName("sm-img-all")[0];
@@ -104,6 +112,11 @@ closeNewBanner.addEventListener("click", function(e){
     this.parentElement.parentElement.removeChild(this.parentElement);
 }, false);
 
+// 删除左侧面banner
+slClose.addEventListener("click", function(e){
+    this.parentElement.parentElement.removeChild(this.parentElement);
+}, false);
+
 // 切换 促销和公告
 snFirsts.forEach((ele,ind,arr) => {
     ele.addEventListener("mouseenter", function(e){
@@ -129,3 +142,19 @@ setInterval(function(){
         secKillSecond.innerHTML = addZero(seckillIndex);
     }
 }, 1000);
+
+
+sl1n.addEventListener("click", function(){
+    sl1Index -= 800;
+    sliderList1.style.left = sl1Index + "px";
+    if(sl1Index == -3200){
+        sl1Index = 800;
+    }
+}, false);
+sl1p.addEventListener("click", function(){
+    sl1Index += 800;
+    sliderList1.style.left = sl1Index + "px";
+    if(sl1Index <= -3200 || sl1Index >= 800){
+        sl1Index = 0;
+    }
+}, false);
