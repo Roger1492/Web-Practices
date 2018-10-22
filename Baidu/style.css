@@ -1,0 +1,93 @@
+.list{
+    position: relative;
+    float: right;
+}
+.list > ul{
+    list-style-type: none;
+    position: relative;
+}
+.list > ul > li{
+    float: left;
+    font-size: 13px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.list > ul > li > a{
+    color: black;
+    font-weight: 600;
+}
+.list > ul > li > a:hover{
+    color: blue;
+}
+.list-highlight{
+    background: #3385ff;
+    color: white;
+}
+
+.sub-list{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 60px;
+    list-style-type: none;
+    background: lightblue;
+    display: none;
+}
+.sub-list li{
+    font-size: 12px;
+    border-bottom: 1px solid gray;
+}
+.sub-list li:nth-of-type(1){
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.sub-list li a{
+    text-decoration: none;
+}
+.sub-list li a img{
+    width: 30px;
+}
+
+.container{
+    position: relative;
+    width: 650px;
+    margin: auto;
+    padding-top: 150px;
+}
+.logo img{
+    position: relative;
+    left: 200px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+.search-box{
+    position: relative;
+}
+.search-box input[type="search"]{
+    width: 500px;
+    height: 35px;
+    font-family: 'Microsoft YaHei', 'Courier New', Courier, monospace;
+}
+.search-img{
+    position: absolute;
+    top: 10px;
+    right: 158px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    background-image: url("img/sprite_camera.png");
+}
+.search-img:hover{
+    background-position: 0 18px;
+}
+.search-box input[type="button"]{
+    position: relative;
+    top: -2px;
+    left: -5px;
+    height: 35px;
+    border: none;
+    padding: 0 20px;
+    background: #3385ff;
+}
