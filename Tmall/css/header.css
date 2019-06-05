@@ -1,0 +1,53 @@
+/* header样式开始 */
+header{
+    position: relative;
+    height: 40px;
+    background: #f2f2f2;
+    color: #999;
+    box-shadow: 0 1px 3px gray;
+}
+.head_wrap{
+    height: 30px;
+    line-height: 30px;
+}
+.h_left,.h_right{
+    display: inline-block;
+}
+.h_left span,
+.h_left a{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 12px;
+    color: #999;
+    text-decoration: none;
+}
+.h_left a:hover{
+    color: #FF0036;
+}
+.h_right{
+    margin-left: 500px;
+}
+.h_right > div{
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+}
+.hr_first{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.hr_first:hover{
+    background: #fff;
+}
+.hr_second{
+    position: absolute;
+    top: 40px;
+    width: 100px;
+    border: 1px solid gray;
+}
+.hr_second div a{
+    text-decoration: none;
+    color: #999;
+    margin-left: 15px;
+}
+/* header样式结束 */
