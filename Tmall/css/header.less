@@ -1,0 +1,313 @@
+/* site-nav样式开始 */
+#site-nav {
+  position: relative;
+  height: 40px;
+  background: #f2f2f2;
+  color: #999;
+  box-shadow: 0 1px 3px gray;
+  font-size: 13px;
+}
+
+.site-nav-wrap {
+  margin: 0 auto;
+  width: 1230px;
+  height: 30px;
+  line-height: 30px;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      float: left;
+      height: 40px;
+    }
+  }
+}
+
+.head-ul-1 li {
+  margin-right: 10px;
+
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: #999;
+
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.head-ul-2 {
+  position: relative;
+  left: 470px;
+  z-index: 99;
+
+  li {
+    position: relative;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    &:nth-of-type(1):hover,
+    &:nth-of-type(3):hover,
+    &:nth-of-type(6):hover,
+    &:nth-of-type(7):hover {
+      background: white;
+    }
+  }
+}
+
+// 被多次引用的样式 - 不包含上边框的边框
+.head_sub_hover {
+  position: absolute;
+  top: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent rgb(231, 231, 231) rgb(231, 231, 231) rgb(231, 231, 231);
+  background: white;
+  display: none;
+}
+
+// a和a的hover样式
+.a_and_hover{
+  a {
+    text-decoration: none;
+    color: #999;
+
+    &:hover {
+      color: red;
+      text-decoration: underline;
+    }
+  }
+}
+
+// 样式 - 我的淘宝
+.myTaobao_sub {
+  left: -10px;
+  width: 90px;
+  padding-left: 15px;
+  .head_sub_hover();
+  .a_and_hover();
+}
+
+// 样式 - 我的收藏
+.myFavorite_sub {
+  left: 0px;
+  width: 80px;
+  padding-left: 5px;
+  .head_sub_hover();
+  .a_and_hover();
+}
+
+// 样式 - 商家支持
+.sellerSuppurt-sub {
+  width: 140px;
+  left: -79px;
+  padding-left: 10px;
+  .head_sub_hover();
+
+  section {
+    font-weight: 600;
+    height: 40px;
+    a {
+      display: inline-block;
+      font-weight: 400;
+      text-decoration: none;
+      color: #999;
+
+      &:hover {
+        color: red;
+        text-decoration: underline;
+      }
+
+      &:nth-of-type(2) {
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+// 样式 - 网站导航
+.websiteNav-sub{
+  width: 1200px;
+  left: -1112px;
+  height: 160px;
+  .head_sub_hover();
+  div{
+    float: left;
+    section:nth-of-type(1){
+      font-size: 25px;
+      margin-left: 30px;
+    }
+    section{
+      margin-left: 30px;
+      margin-top: 10px;
+      height: 25px;
+    }
+    section a{
+      display: inline-block;
+      width: 90px;
+      text-decoration: none;
+      color: #999;
+    }
+  }
+  .websiteNav-sub1 section a:hover{
+    color: #f56a00;
+    text-decoration: underline;
+  }
+  .websiteNav-sub2 section a:hover{
+    color: #2263d4;
+    text-decoration: underline;
+  }
+  .websiteNav-sub3 section a:hover{
+    text-decoration: underline;
+  }
+}
+
+.head-ul-2 li:hover div:nth-of-type(2) {
+  display: block;
+}
+/* site-nav 样式结束 */
+
+
+
+/* header样式开始 */
+#head{
+  position: relative;
+  margin: 0 auto;
+  width: 1230px;
+  height: 106px;
+}
+.head-wrap{
+  position: relative;
+  width: 650px;
+  margin: 0 auto;
+}
+.head-1{
+  position: relative;
+  margin-top: 35px;
+}
+.head-2{
+  margin-top: 5px;
+}
+.head-2 a{
+  display: inline-block;
+  text-decoration: none;
+  color: #999;
+  padding-right: 15px;
+}
+.search-box{
+  width: 500px;
+  height: 26px;
+  outline: none;
+  border: 2px solid red;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-indent: 5px;
+}
+.search-btn{
+  position: relative;
+  left: -5px;
+  width: 120px;
+  height: 40px;
+  border: 2px solid red;
+  background: red;
+  color: white;
+  font-weight: 600;
+}
+/* header样式结束 */
+
+
+/* main-nav样式开始 */
+#main-nav{
+  position: relative;
+  left: 339px;
+  width: 1230px;
+  height: 34px;
+  border-bottom: 2px solid red;
+  div{
+    position: relative;
+    top: -7px;
+    display: inline-block;
+    width: 200px;
+    background: red;
+    height: 36px;
+    color: #f2f2f2;
+    i{
+      font-size: 18px;
+      line-height: 36px;
+      margin-left: 8px;
+    }
+    span{
+      display: inline-block;
+      font-size: 18px;
+    }
+  }
+  a{
+    position: relative;
+    top: -5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+    color: #333;
+    height: 34px;
+    line-height: 34px;
+    font-size: 20px;
+    &:hover{
+      color: red;
+    }
+    img{
+      position: relative;
+      top: 5px;
+      height: 30px;
+    }
+  }
+}
+/* main-nav样式结束 */
+
+
+
+/* 轮播图样式开始 */
+#slide-container{
+  position: relative;
+  left: 339px;
+  width: 1230px;
+  height: 500px;
+  .slide-wrap{
+    width: 1230px;
+    height: 500px;
+    div{
+      position: absolute;
+      img{
+        width: 1230px;
+        height: 500px;
+      }
+    }
+  }
+  .slide-dots{
+    position: relative;
+    left: 500px;
+    top: -50px;
+    span{
+      display: inline-block;
+      margin-left: 5px;
+      width: 30px;
+      height: 5px;
+      background: #999;
+      cursor: pointer;
+      &:hover{
+        background: white;
+      }
+    }
+  }
+}
+.slide-no-show{
+  display: none;
+}
+.slide-show{
+  display: block;
+}
+/* 轮播图样式结束 */
