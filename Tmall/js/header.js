@@ -15,13 +15,3 @@ setInterval(function(e){
   }
   slideImg[slideIndex].style.display = 'block';
 }, 5000)
-
-// window.onload = function(){
-//   autoRun();
-// }
-// slideContainer.addEventListener('mouseover',function(e){
-//   clearInterval()
-// }, false);
-// slideContainer.addEventListener('mouseout', function(e){
-//   autoRun();
-// }, false);
