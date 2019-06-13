@@ -17,6 +17,8 @@ setInterval(function(e){
 }, 5000)
 
 
+
+
 // 创建目录列表中的图片
 let cateSub2 = Array.from(document.querySelectorAll('.cate-sub-2'));
 
