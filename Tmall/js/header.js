@@ -291,3 +291,54 @@ let cateSub2Img = Array.from(document.querySelectorAll('.cate-sub-2 a img'));
 cateSub2Img.forEach((item, ind, arr) => {
   item.src = cateImgListArr[ind];
 })
+
+
+
+
+// #mainPage-2
+let mp2ContextText = ['优惠劵 ￥120','Baby Coccole', 'Schneider Electric...','ENFINITAS/蓝臻','优惠劵 ￥250','Babyzen','优惠劵 ￥300','优惠劵 ￥70','优惠劵 ￥100','优惠劵 ￥100','优惠劵 ￥250','scout','优惠劵 ￥210','优惠劵 ￥140','优惠劵 ￥100','双心','hot topic','BARNEYS NEW Y...','优惠劵 ￥100','优惠劵 ￥50','优惠劵 ￥50','优惠劵 ￥10','STOKKE','优惠劵 ￥150','优惠劵 ￥10','优惠劵 ￥80','云南白药','Colgate/高露洁','优惠劵 ￥30'];
+let mp2ContextImg = [
+'https://img.alicdn.com/i2/2/TB1gWINIVXXXXbbXFXXSutbFXXX.jpg_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1LA6XoL5TBuNjSspmXXaDRVXa?abtest=&pos=31&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1ilbUHpXXXXb8XXXXSutbFXXX.jpg_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1TJNTPXXXXXcqXVXXSutbFXXX.jpg_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1a3bVRXXXXXbfXFXXXXXXXXXX?abtest=&pos=5&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1kloQx8mWBuNkSndVSuwsApXa.jpg_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1gD8NhDlYBeNjSszcXXbwhFXa?abtest=&pos=7&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1_aF7pG6qK1RjSZFmXXX0PFXa?abtest=&pos=8&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB12cBSirGYBuNjy0FoXXciBFXa?abtest=&pos=9&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1IJymuk9WBuNjSspeXXaz5VXa?abtest=&pos=10&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_100x150q100.jpg_.webp',
+'https://img.alicdn.com/imgextra/i4/928417138/O1CN019OFNEK22bFcXdLUb5_!!928417138.png_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1KH4GQpXXXXb_apXXSutbFXXX.jpg_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1_kq7j1SSBuNjy0FlXXbBpVXa?abtest=&pos=13&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1sM7GSXXXXXb3aXXXXXXXXXXX?abtest=&pos=14&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1A9Eicf5TBuNjSspmXXaDRVXa?abtest=&pos=15&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_100x150q100.jpg_.webp  ',
+'https://img.alicdn.com/i2/2/TB1R1K4GFmWBuNjSspdSuvugXXa.jpg_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/T25cAwXGhXXXXXXXXX-1785908005.jpg_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1igurtrSYBuNjSspfXXcZCpXa?abtest=&pos=18&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1gOvrmZLJ8KJjy0FnXXcFDpXa?abtest=&pos=19&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/T11mf3Xf0iXXb1upjX.jpg_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1aA5EcMsSMeJjSspeXXa77VXa?abtest=&pos=21&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1G5bXD9BYBeNjy0FeSuvnmFXa.jpg_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1XcHYHpXXXXXmXXXXSutbFXXX.jpg_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1lnhJq9BYBeNjy0FeXXbnmFXa?abtest=&pos=24&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1yQ87kFzqK1RjSZFCXXbbxVXa?abtest=&pos=25&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1CAsYJpXXXXbuXpXXwu0bFXXX.png_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1123WLXXXXXX3aXXXSutbFXXX.jpg_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1Bcu9JFXXXXc9XXXXSutbFXXX.jpg_100x150q100.jpg_.webp',
+'https://img.alicdn.com/i2/2/TB1Ul00mlfH8KJjy1XbXXbLdXXa?abtest=&pos=29&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_100x150q100.jpg_.webp',
+];
+let mp2Wrap = document.getElementsByClassName('mp2-wrap')[0];
+for(let i = 0; i < 29; i++){
+  let createWrapA = document.createElement('a');
+  let createImg = document.createElement('img');
+  let createSpan1 = document.createElement('span');
+  let createSpan2 = document.createElement('span');
+  mp2Wrap.appendChild(createWrapA);
+  createWrapA.appendChild(createImg);
+  createWrapA.appendChild(createSpan1);
+  createWrapA.appendChild(createSpan2);
+  createImg.src = mp2ContextImg[i];
+  createSpan1.innerText = mp2ContextText[i];
+  createSpan2.innerText = '点击进入';
+}
