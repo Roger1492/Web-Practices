@@ -333,10 +333,12 @@ for(let i = 0; i < 29; i++){
   let createWrapA = document.createElement('a');
   let createImg = document.createElement('img');
   let createSpan1 = document.createElement('span');
+  let createBr = document.createElement('br');
   let createSpan2 = document.createElement('span');
   mp2Wrap.appendChild(createWrapA);
   createWrapA.appendChild(createImg);
   createWrapA.appendChild(createSpan1);
+  createWrapA.appendChild(createBr);
   createWrapA.appendChild(createSpan2);
   createImg.src = mp2ContextImg[i];
   createSpan1.innerText = mp2ContextText[i];

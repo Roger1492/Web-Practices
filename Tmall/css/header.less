@@ -446,19 +446,67 @@ html,body{
   position: relative;
   width: 1230px;
   margin: 0 auto;
+  div{
+    display: inline-block;
+  }
   .mp2-wrap{
+    position: relative;
     width: 1230px;
     a{
-      display: inline-block;
+      position: relative;
+      float: left;
       width: 122px;
       height: 108px;
+      cursor: pointer;
       img{
+        position: relative;
+        left: 10px;
+        top: 30px;
         width: 100px;
         height: 50px;
+        z-index: -99;
+      }
+      span{
+        position: relative;
+        top: -10px;
+        margin-top: 5px;
+        font-size: 12px;
+        text-align: center;
+        color: white;
+        z-index: 99;
+        display: none;
+      }
+      span:nth-of-type(1){
+        width: 122px;
+      }
+      span:nth-of-type(2){
+        background: red;
+        border-radius: 10px;
+        left: 28px;
+        padding: 4px 8px;
+      }
+      &:hover{
+        background: rgba(0, 0, 0, 0.8);
+      }
+      &:hover span{
+        display: inline-block;
       }
     }
   }
+  .mp2-switch{
+    position: absolute;
+    width: 122px;
+    height: 78px;
+    transform: translate(1098px, 216px);
+    text-align: center;
+    padding-top: 30px;
+    &:hover{
+      background: #FF0036;
+      color: white;
+    }
+  }
 }
+
 
 
 /* mainPage-2 样式开始 */

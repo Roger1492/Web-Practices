@@ -388,12 +388,22 @@
     </div>
   </div>
   <div id="mainPage-2">
+    <!-- TODO: 切换 -->
     <div class="mp2-wrap">
+      <!-- <a href="javascript:void(0);">
+        <img src="https://img.alicdn.com/i2/2/TB1Ul00mlfH8KJjy1XbXXbLdXXa?abtest=&pos=29&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_100x150q100.jpg_.webp" alt="">
+        <span>优惠劵 ￥10</span><br>
+        <span>点击进入</span>
+      </a> -->
+      <div class="mp2-switch">
+        <i class="fa fa-recycle"></i>
+        <br>
+        <span>换一批</span>
+      </div>
     </div>
-    <div class="mp2-switch">
-      <i class="fa fa-recycle"></i>
-      换一批
-    </div>
+  </div>
+  <div id="mainPage-3">
+    <little-context-wrap v-for="mp3s in mp3Contexts" :mp3s="mp3s"></little-context-wrap>
   </div>
   <!-- <div id="mainPage"></div> -->
   <!-- <footer></footer> -->

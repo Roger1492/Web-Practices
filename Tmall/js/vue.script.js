@@ -17,6 +17,17 @@ Vue.component('cate-list', {
   }
 })
 
+Vue.component('little-context-wrap',{
+  props: ['mp3s'],
+  template: `
+    <a href="javascript:void(0);">
+      <img class="test" />
+      <div>{{mp3s.text}}</div>
+      <span>￥{{mp3s.price}}</span>
+    </a>
+  `
+})
+
 new Vue({
   el: '#category-list',
   data: {
@@ -185,5 +196,15 @@ new Vue({
       { first: '进口原版 >', second: ['进口童书','原版小说','原版设计','艺术原版','童书绘本','港台原版书']},
       { first: '大牌乐器 >', second: ['乐器','钢琴','智能钢琴','数码钢琴','电子琴','吉他','尤克里里','古筝']},
     ],
+  }
+})
+
+new Vue({
+  el: '#mainPage-3',
+  data: {
+    mp3Contexts: [
+      {text: '【爆款疯抢】德国LYRA艺雅洞洞铅笔', price: '49'},
+      {text: '【天猫超市】Skyworth/创维', price: '1698'}
+    ]
   }
 })
