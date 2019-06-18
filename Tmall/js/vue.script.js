@@ -20,9 +20,9 @@ Vue.component('cate-list', {
 Vue.component('little-context-wrap',{
   props: ['mp3s'],
   template: `
-    <a href="javascript:void(0);">
-      <img class="test" />
-      <div>{{mp3s.text}}</div>
+    <a href="javascript:void(0);" class="list-card">
+      <img />
+      <div><span>{{mp3s.text}}</span></div>
       <span>￥{{mp3s.price}}</span>
     </a>
   `
@@ -202,9 +202,32 @@ new Vue({
 new Vue({
   el: '#mainPage-3',
   data: {
-    mp3Contexts: [
+    mp3Contexts1: [
       {text: '【爆款疯抢】德国LYRA艺雅洞洞铅笔', price: '49'},
-      {text: '【天猫超市】Skyworth/创维', price: '1698'}
+      {text: '【天猫超市】Hisense/海信', price: '1698'},
+      {text: 'Harbin/哈尔滨啤酒小麦王拉罐330ml*12', price: '39.91'},
+      {text: '张小泉半自动打蛋器全钢旋转打蛋10寸不锈钢',price: '39'},
+      {text: '百草味果粒酸奶块54g 什锦冻干芒果香蕉火龙果水果干网红零食小吃', price: '29.8'},
+      {text: '维维维他型豆奶粉 360g+顾大嫂重庆酸辣粉红薯粉 100g', price: '41.5'},
+    ],
+    mp3Contexts2: [
+      {text: 'PARKER派克都市简影白夹墨水笔男女学生用成人送礼商务高档签字笔', price: '758'}
+    ]
+  }
+})
+
+new Vue({
+  el: '#mainPage-4',
+  data: {
+    mp3Contexts2: [
+      {text: 'PARKER派克都市简影白夹墨水笔男女学生用成人送礼商务高档签字笔', price: '758'},
+      {text: '韩国JMsolution慈善面膜JM面膜新款金色银色补水保湿学生官方正品', price: '53'},
+      {text: '【直营】美国Thinkbaby进口儿童宝宝防晒霜 保湿防水SPF50+89ml', price: '54'},
+      {text: '韩国the face shop/菲诗小铺圆形海绵卸妆化妆棉化妆品工具脸部', price: '29'},
+      {text: '【会员专享】LACHESCA高保湿洁面130g', price: '99'},
+      {text: '韩国进口holika不二家peko果冻腮红定裸妆自然持久不脱妆腮红 6g', price: '45.8'},
+      {text: '保税区现货加拿大雅培2段奶粉658g高钙高铁含DHA AA叶黄素 益生元', price: '215'},
+      {text: '百草味果粒酸奶块54g 什锦冻干芒果香蕉火龙果水果干网红零食小吃', price: '12.9'}
     ]
   }
 })

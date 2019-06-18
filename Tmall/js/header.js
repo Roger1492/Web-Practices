@@ -344,3 +344,50 @@ for(let i = 0; i < 29; i++){
   createSpan1.innerText = mp2ContextText[i];
   createSpan2.innerText = '点击进入';
 }
+
+
+// #mainPage-3
+let listCardImg = Array.from(document.querySelectorAll('.list-card img'));
+let listCardImgUrl = [
+  'https://gw.alicdn.com/bao/uploaded/i2/725677994/O1CN01y9pqj028vIgeMgU4e_!!0-item_pic.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i4/TB1Fy01LpXXXXXkXVXXz2Yt.pXX_103711.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i2/725677994/TB2xJALcVzqK1RjSZFzXXXjrpXa_!!725677994-0-sm.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i4/725677994/O1CN01J5Dw6e28vIgSx8fFG_!!0-item_pic.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i1/725677994/O1CN01i9AymN28vIgdznSMH_!!0-item_pic.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i3/725677994/TB27UA5cVzqK1RjSZSgXXcpAVXa_!!725677994-0-sm.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i1/2200643497500/O1CN011ZFVDo25H30qMSqX4_!!0-item_pic.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i2/1835946814/O1CN01TLDdCG20CrKUzCtmG_!!0-item_pic.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i2/2200657724932/O1CN01SfzNqg1mItvvNGsyE_!!2200657724932-0-sm.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i2/2063458233/O1CN01RzVoZK2AglIyGEhdM_!!0-item_pic.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i2/2877976327/O1CN01EsOiWB1wboOSVAGEI_!!0-item_pic.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i4/2816529503/O1CN01Gp249u2K4QLa1RCBt_!!0-item_pic.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i1/1969845060/O1CN01RWYyCy1nFWc6bNpJM_!!0-item_pic.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i1/725677994/O1CN01i9AymN28vIgdznSMH_!!0-item_pic.jpg'
+];
+for(let i = 0; i < listCardImg.length; i++){
+  listCardImg[i].src = listCardImgUrl[i];
+}
+
+// #mainPage-3中的切换动画
+let mp3SlideDiv = Array.from(document.querySelectorAll('.mp3-wrap ul li div:nth-of-type(1)'));
+let mp3slide = Array.from(document.querySelectorAll('.mp3-wrap ul li div:nth-of-type(2)'));
+let mp3Wrap = document.getElementsByClassName('mp3-wrap')[0];
+
+setInterval(function(){
+  if(mp3slide[1].classList.contains('mp3Slide')){
+    mp3slide[1].classList.remove('mp3Slide');
+    mp3slide[0].classList.add('mp3Slide');
+  } else {
+    mp3slide[0].classList.remove('mp3Slide');
+    mp3slide[1].classList.add('mp3Slide');
+  }
+}, 2000);
+
+mp3SlideDiv[0].addEventListener('mouseover', function(){
+  mp3slide[1].classList.remove('mp3Slide');
+  mp3slide[0].classList.add('mp3Slide');
+}, false);
+mp3SlideDiv[1].addEventListener('mouseover', function(){
+  mp3slide[0].classList.remove('mp3Slide');
+  mp3slide[1].classList.add('mp3Slide');
+}, false);

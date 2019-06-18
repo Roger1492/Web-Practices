@@ -442,6 +442,9 @@ html,body{
   }
 }
 /* mainPage-1 样式结束*/
+
+
+/* mainPage-2 样式开始 */
 #mainPage-2{
   position: relative;
   width: 1230px;
@@ -506,8 +509,271 @@ html,body{
     }
   }
 }
-
-
-
-/* mainPage-2 样式开始 */
 /* mainPage-2 样式结束*/
+
+
+// list-card-a-wrap 样式
+.list-card-a-wrap{
+  display: inline-block;
+  width: 600px;
+  height: 30px;
+  padding-left: 393px;
+  a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 6px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+// list-card 样式
+.list-card{
+  position: relative;
+  float: left;
+  width: 235px;
+  height: 302px;
+  text-decoration: none;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  color: #000;
+  margin-top: 15px;
+  margin-left: 11px;
+  img{
+    position: relative;
+    transform: translate(25px,5px);
+    width: 185px;
+    height: 185px;
+  }
+  div{
+    position: relative;
+    margin-top: 30px;
+    width: 235px;
+    height: 35px;
+    span{
+      position: absolute;
+      transform: translateX(50px);
+      display: inline-block;
+      width: 135px;
+      height: 35px;
+      text-align: center;
+      overflow: hidden;
+      color: #000;
+      font-size: 16px;
+    }
+  }
+  > span{
+    display: inline-block;
+    margin-top: 10px;
+    width: 235px;
+    font-size: 20px;
+    color: #f00;
+    text-align: center;
+  }
+  &:hover{
+    border-color: #f00;
+  }
+}
+
+
+/* mainPage-3 样式开始 */
+.mp3Slide{
+  display: none;
+}
+
+#mainPage-3{
+  position: relative;
+  margin: 20px auto;
+  width: 1230px;
+  height: 665px;
+  .mp3-1{
+    display: inline-block;
+    width: 235px;
+    height: 665px;
+    div{
+      width: 235px;
+      height: 30px;
+      img{
+        width: 214px;
+        height: 25px;
+      }
+    }
+    a{
+      position: relative;
+      margin-top: 17px;
+      display: inline-block;
+      width: 235px;
+      height: 618px;
+      font-size: 20px;
+      img{
+        width: 235px;
+        height: 618px;
+      }
+      section{
+        position: absolute;
+        top: 400px;
+        width: 218px;
+        height: 64px;
+        span{
+          display: inline-block;
+          height: 64px;
+          color: #fff;
+          text-align: center;
+          line-height: 30px;
+        }
+        span:nth-of-type(1){
+          width: 70px;
+          background: #000;
+        }
+        span:nth-of-type(2){
+          width: 128px;
+          background: rgba(0, 0, 0, .5);
+        }
+      }
+    }
+  }
+  .mp3-2{
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 995px;
+    height: 618px;
+    .mp3-wrap{
+      position: relative;
+      margin-top: 16px;
+      margin-left: 11px;
+      float: left;
+      width: 484px;
+      height: 301px;
+      box-sizing: border-box;
+    }
+
+    ul{
+      width: 462px;
+      list-style-type: none;
+      cursor: pointer;
+      li{
+        position: relative;
+        left: -30px;
+        top: -5px;
+        float: left;
+        width: 231px;
+        height: 57px;
+        background: #f5f5f5;
+        div:nth-of-type(1){
+          position: absolute;
+          font-size: 25px;
+          height: 57px;
+          width: 231px;
+          text-align: center;
+          line-height: 57px;
+          &:hover{
+            background: #00B262;
+            color: #fff;
+          }
+        }
+        div:nth-of-type(2){
+          position: absolute;
+          top: 60px;
+          width: 462px;
+          height: 225px;
+        }
+        &:nth-of-type(2) div:nth-of-type(2){
+          position: absolute;
+          left: -231px;
+        }
+        section{
+          float: left;
+          &:nth-of-type(1){
+            position: relative;
+            top: 100px;
+            width: 231px;
+            height: 87px;
+            background: #f5f5f5;
+            span:nth-of-type(1){
+              font-size: 26px;
+              color: #00B262;
+            }
+            &:before{
+              position: absolute;
+              content: '';
+              left: 231px;
+              width: 0;
+              height: 0;
+              border: 44px solid;
+              border-color: transparent transparent transparent #f5f5f5;
+            }
+          }
+          &:nth-of-type(2) img{
+            width: 200px;
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+/* mainPage-3 样式结束*/
+
+
+
+
+/* mainPage-4 样式开始*/
+#mainPage-4{
+  position: relative;
+  margin: 50px auto;
+  width: 1230px;
+  height: 665px;
+  box-sizing: border-box;
+  .mp4-1{
+    img{
+      width: 215px;
+      height: 30px;
+    }
+    div{
+      display: inline-block;
+    }
+  }
+  .mp4-2{
+    div{
+      display: inline-block;
+      section{
+        position: relative;
+        width: 235px;
+        img{
+          width: 235px;
+          height: 300px;
+        }
+        div{
+          position: absolute;
+          top: 150px;
+          span{
+            float: left;
+            height: 64px;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            &:nth-of-type(1){
+              width: 70px;
+              background: #000;
+            }
+            &:nth-of-type(2){
+              width: 128px;
+              background: rgba(0, 0, 0, .5);
+            }
+          }
+        }
+        &:nth-of-type(2){
+          position: relative;
+          top: 15px;
+        }
+      }
+      &:nth-of-type(2){
+        position: absolute;
+        top: 28px;
+      }
+    }
+  }
+}
+/* mainPage-4 样式结束*/
