@@ -346,7 +346,7 @@ for(let i = 0; i < 29; i++){
 }
 
 
-// #mainPage-3
+// #mainPage-3 #mainPage-4 中的图片
 let listCardImg = Array.from(document.querySelectorAll('.list-card img'));
 let listCardImgUrl = [
   'https://gw.alicdn.com/bao/uploaded/i2/725677994/O1CN01y9pqj028vIgeMgU4e_!!0-item_pic.jpg',
@@ -362,7 +362,15 @@ let listCardImgUrl = [
   'https://gw.alicdn.com/bao/uploaded/i2/2877976327/O1CN01EsOiWB1wboOSVAGEI_!!0-item_pic.jpg',
   'https://gw.alicdn.com/bao/uploaded/i4/2816529503/O1CN01Gp249u2K4QLa1RCBt_!!0-item_pic.jpg',
   'https://gw.alicdn.com/bao/uploaded/i1/1969845060/O1CN01RWYyCy1nFWc6bNpJM_!!0-item_pic.jpg',
-  'https://gw.alicdn.com/bao/uploaded/i1/725677994/O1CN01i9AymN28vIgdznSMH_!!0-item_pic.jpg'
+  'https://gw.alicdn.com/bao/uploaded/i1/725677994/O1CN01i9AymN28vIgdznSMH_!!0-item_pic.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i3/392193281/O1CN01PMGxe41a6k0qhy2bb_!!0-item_pic.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i2/2103359059/O1CN011YoJu22Gn4TBCXxpP_!!0-item_pic.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i1/2754636094/O1CN01UuPtLb1ut6ABaPvgS_!!0-item_pic.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i1/3539093100/O1CN01futeUF1YlqKaxnMJI_!!0-item_pic.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i8/TB1R7HJaGSWBuNjSsrbYXG0mVXa_M2.SS2',
+  'https://gw.alicdn.com/bao/uploaded/i4/1680509366/O1CN01KkRGvM2J3g337qgpu_!!0-item_pic.jpg',
+  'https://gw.alicdn.com/bao/uploaded/i3/2455420361/O1CN01OnBa6P1EXNSLyFId9_!!2-item_pic.png',
+  'https://gw.alicdn.com/bao/uploaded/i2/1015537880/O1CN01PxtfbB2855VhqHtB2_!!2-item_pic.png',
 ];
 for(let i = 0; i < listCardImg.length; i++){
   listCardImg[i].src = listCardImgUrl[i];

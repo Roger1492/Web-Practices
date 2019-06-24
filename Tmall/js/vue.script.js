@@ -28,6 +28,18 @@ Vue.component('little-context-wrap',{
   `
 })
 
+// 组件 - 首页的小展示框
+Vue.component('price-item-price-wrap', {
+  props: ['context'],
+  template: `
+    <a href="javascript:void(0);" class="little-item-wrap">
+      <img class="little-item-img" />
+      <div><span>{{context.text}}</span></div>
+      <span>￥{{context.price}}</span>
+    </a>
+  `
+})
+
 new Vue({
   el: '#category-list',
   data: {
@@ -228,6 +240,15 @@ new Vue({
       {text: '韩国进口holika不二家peko果冻腮红定裸妆自然持久不脱妆腮红 6g', price: '45.8'},
       {text: '保税区现货加拿大雅培2段奶粉658g高钙高铁含DHA AA叶黄素 益生元', price: '215'},
       {text: '百草味果粒酸奶块54g 什锦冻干芒果香蕉火龙果水果干网红零食小吃', price: '12.9'}
+    ]
+  }
+})
+
+new Vue({
+  el: '#mainPage-5',
+  data: {
+    mps: [
+      {text: '墨水笔', price: '22'}
     ]
   }
 })

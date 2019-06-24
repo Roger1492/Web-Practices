@@ -442,13 +442,13 @@
             <div>量贩装</div>
             <div class="mp3Slide">
               <section>
-                  <img src="https://img.alicdn.com/tfs/TB12RqQewMPMeJjy1XdXXasrXXa-23-23.png" alt="">
-                  <span>立白茶籽洗衣液</span><br>
-                  <span>减20送礼包</span>
-                </section>
-                <section>
-                  <img src="https://img.alicdn.com/tfs/TB19Ujcd3HqK1RjSZFkXXX.WFXa-400-400.jpg" alt="">
-                </section>
+                <img src="https://img.alicdn.com/tfs/TB12RqQewMPMeJjy1XdXXasrXXa-23-23.png" alt="">
+                <span>立白茶籽洗衣液</span><br>
+                <span>减20送礼包</span>
+              </section>
+              <section>
+                <img src="https://img.alicdn.com/tfs/TB19Ujcd3HqK1RjSZFkXXX.WFXa-400-400.jpg" alt="">
+              </section>
             </div>
           </li>
         </ul>
@@ -460,15 +460,15 @@
     <div class="mp4-1">
       <img src="https://img.alicdn.com/tfs/TB1R.slXGagSKJjy0FgXXcRqFXa-428-50.png" alt="">
       <div class="mp3-a list-card-a-wrap">
-          <a href="javascript:void(0);">进口食品</a>
-          <a href="javascript:void(0);">食品饮料</a>
-          <a href="javascript:void(0);">粮油副食</a>
-          <a href="javascript:void(0);">美容洗护</a>
-          <a href="javascript:void(0);">家具家电</a>
-          <a href="javascript:void(0);">家庭清洁</a>
-          <a href="javascript:void(0);">母婴用品</a>
-          <a href="javascript:void(0);">生鲜水果</a>
-        </div>
+        <a href="javascript:void(0);">进口食品</a>
+        <a href="javascript:void(0);">食品饮料</a>
+        <a href="javascript:void(0);">粮油副食</a>
+        <a href="javascript:void(0);">美容洗护</a>
+        <a href="javascript:void(0);">家具家电</a>
+        <a href="javascript:void(0);">家庭清洁</a>
+        <a href="javascript:void(0);">母婴用品</a>
+        <a href="javascript:void(0);">生鲜水果</a>
+      </div>
     </div>
     <div class="mp4-2">
       <div>
@@ -488,11 +488,14 @@
         </section>
       </div>
       <div>
-          <little-context-wrap v-for="mp3s in mp3Contexts2" :mp3s="mp3s"></little-context-wrap>
+        <little-context-wrap v-for="mp3s in mp3Contexts2" :mp3s="mp3s"></little-context-wrap>
       </div>
     </div>
   </div>
-  <div id="mainPage-5"></div>
+  <div id="mainPage-5">
+    <!-- 重构 -->
+    <price-item-price-wrap v-for="mp in mps" :mp="mp"></price-item-price-wrap>
+  </div>
   <!-- <div id="mainPage"></div> -->
   <!-- <footer></footer> -->
 
