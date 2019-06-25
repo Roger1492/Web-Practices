@@ -1,0 +1,7 @@
+#content{
+    position: relative;
+    margin: 0 auto;
+    width: 1230px;
+    min-height: 1000px;
+    outline: 1px solid gray;
+}
